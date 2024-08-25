@@ -1,0 +1,22 @@
+/*
+El cambio en la etiqueta "html" y "body" permite usar la unidad de medida "rem"
+con la finalidad de mejorar la adaptabilidad del sitio web a diversos dispositivos
+*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+/* 1rem = 10px */
+
+h1 {
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+span {
+    font-size: 2rem;
+}
