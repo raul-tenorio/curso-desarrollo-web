@@ -1,3 +1,11 @@
+:root {
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
 /*
 El cambio en la etiqueta "html" y "body" permite usar la unidad de medida "rem"
 con la finalidad de mejorar la adaptabilidad del sitio web a diversos dispositivos
@@ -8,15 +16,46 @@ html {
 
 body {
     font-size: 16px;
+    font-family: "Krub", sans-serif;
 }
 
 /* 1rem = 10px */
 
-h1 {
+.titulo {
     text-align: center;
     font-size: 3.8rem;
 }
 
-span {
+.titulo span {
     font-size: 2rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+}
+
+.navegacion-principal a:focus {
+    background-color: var(--primario);
 }
